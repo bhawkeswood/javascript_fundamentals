@@ -54,7 +54,7 @@ ageCalculator(1951, 2013);
 
 function calculateSupply(age, amountPerDay){
 	
-	var daysInTheYear = 365
+	var daysInTheYear = 365;
 	var averageLifespan = 81;
 	var timeLeft = averageLifespan - age;
 	var supply = amountPerDay * timeLeft * daysInTheYear;
@@ -114,3 +114,19 @@ calcArea(25);
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 
+function celsiusToFarenheit(temp) {
+	var celsius = temp;
+	var celsiusConverted = celsius * (9/5) + 32;
+
+	console.log(celsius + "°C is " + celsiusConverted + "°F");
+}
+celsiusToFarenheit(25);
+
+function farenheitToCelsius(temp) {
+	var farenheit = temp;
+	var farenheitConverted = (farenheit - 32) * (5/9);
+
+	console.log(farenheit + "°F is " + farenheitConverted + "°C");
+}
+
+farenheitToCelsius(91);
