@@ -6,5 +6,9 @@
 // For each choice, log to the screen a string like: "My #1 choice is blue."
 // Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is.
 
+var favoriteMeals = ['Hamburgers', 'Okonomiyaki', 'Dumplings', 'Pizza', 'Soba'];
+	for (var f = 0; f < favoriteMeals.length; f++){
+		console.log("My #" + (f + 1) + " choice is " + favoriteMeals[f]);
+	}
 
-
+// var position = favoriteMeals.indexOf(favoriteMeals[f])
