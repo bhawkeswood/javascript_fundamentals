@@ -9,6 +9,15 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+function tellFortune(numberOfChildren, partnerName, geoLocation, jobTitle) {
+	console.log("You will be a " + jobTitle + " in " + geoLocation + " and married to "
+		+ partnerName + " with " + numberOfChildren + " kids.");
+}
+
+tellFortune(10, "Larry", "New York", "Stooge");
+tellFortune(3, "Moe", "Toronto", "Stooge");
+tellFortune(2, "Curly", "Tokyo", "Stooge");
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
@@ -20,6 +29,18 @@
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+function ageCalculator(birthYear, currentYear) {
+
+	var ageHigh = currentYear - birthYear;
+	var ageLow = currentYear - birthYear - 1;
+
+	console.log("You are either " + ageHigh + " or " + ageLow + " years old.");
+}
+
+ageCalculator(1982, 2013);
+ageCalculator(1995, 2013);
+ageCalculator(1951, 2013);
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -30,6 +51,21 @@
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+function calculateSupply(age, amountPerDay){
+	
+	var daysInTheYear = 365
+	var averageLifespan = 81;
+	var timeLeft = averageLifespan - age;
+	var supply = amountPerDay * timeLeft * daysInTheYear;
+
+	console.log("You will need " + supply + 
+		" to last you until the ripe old age of " + averageLifespan + ".");
+}
+
+calculateSupply(31, 2);
+calculateSupply(62, 5);
+calculateSupply(75, 10);
 
 // EXERCISE: The Geometrizer
 
@@ -43,6 +79,27 @@
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+
+
+function calcCircumference(radius) {
+	var pi = 3.14;
+	var d = radius*2;
+	var c = pi*d;
+
+	console.log("The circumference is " + c + " metres.");
+}
+
+calcCircumference(2);
+
+function calcArea(radius) {
+	var pi = 3.14;
+	var d = radius*2;
+	var a = pi*(Math.pow(radius,2));
+
+	console.log("The area is " + a + " metres squared.")
+}
+
+calcArea(25);
 
 // EXERCISE: The Temperature Converter
 
