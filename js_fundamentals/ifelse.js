@@ -78,6 +78,14 @@ assignGrade(22);
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+function pluralize(animal, number){
+	if (number == 1){
+		console.log(number + " " + animal);
+	}else{
+		console.log(number + " " + animal + "s");
+	}
+}
 
-
+pluralize("parrot", 4);
+pluralize("monkey", 1);
 
