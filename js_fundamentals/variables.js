@@ -16,7 +16,7 @@ function fortuneTeller() {
 	 +  partnerName + " with " + numberOfChildren +  " kids.";
 }
 
-fortuneTeller()
+fortuneTeller();
 
 // EXERCISE: The Age Calculator
 
@@ -37,7 +37,7 @@ function ageCalculator() {
 	 + " or " + possibleAge2 + " years old.";
 }
 
-ageCalculator()
+ageCalculator();
 
 
 // EXERCISE: The Lifetime Supply Calculator
@@ -61,7 +61,7 @@ var lifetimeSupplyOfBeer = ( maxAge - currentAge ) * 365 * beersPerDay;
 var beerCalories = 218;
 
 lifetimeSupplyOfBeer;
-lifetimeSupplyOfBeer * beerCalories
+lifetimeSupplyOfBeer * beerCalories;
 
 
 // EXERCISE: The Geometrizer
@@ -81,7 +81,7 @@ function geometrizer() {
 	return "The circumference is " + c +"m, and the area is " + a + "m square.";
 }
 
-geometrizer()
+geometrizer();
 
 
 // EXERCISE: The Temperature Converter
