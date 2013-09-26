@@ -1,20 +1,31 @@
 // SOLUTIONS GO BELOW EACH EXERCISE
-
+ 
 // EXERCISE: Change Background
 
 // Change the background color of '#target' by script. 
 // Hint: you can use .css
+$(document).ready(function() {
+	$("#target").css({"background-color" : "#FF0000" });
+})
 
 // EXERCISE: Change Parent
 
 // Change the text in the span, a child of "#target"
 // Hint: you can use .text
 
+$(document).ready(function(){
+	$("div#target span").text("W00t!");
+});
+
 // EXERCISE: Create Clone
 
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
 
+
+$(document).ready(function(){
+	$('div#target span').clone().insertAfter('div#target span');
+});
 // EXERCISE: Use Filter
 
 // Change background color of the second ".target"
